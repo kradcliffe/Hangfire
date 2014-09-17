@@ -8,7 +8,7 @@
 
     <Exec 
       Condition="'@(ILMergeAssemblies)'!=''"
-      Command="&quot;$(ProgramFiles)\Microsoft\Ilmerge\Ilmerge.exe&quot; /out:&quot;$(TEMP)\$(AssemblyName).dll&quot; &quot;@(MainAssembly)&quot; @(ILMergeAssemblies->'&quot;%(FullPath)&quot;', ' ') /targetplatform:v4,$(MSBuildBinPath) /internalize" />
+      Command="&quot;$(ProgramFiles)\Microsoft\Ilmerge\Ilmerge.exe&quot; /out:&quot;$(TEMP)\$(AssemblyName).dll&quot; &quot;@(MainAssembly)&quot; @(ILMergeAssemblies->'&quot;%(FullPath)&quot;', ' ') /targetplatform:&quot;v4,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0&quot; /internalize" />
 
     <CreateItem Include="$(TEMP)\$(AssemblyName).*">
       <Output TaskParameter="Include" ItemName="ILMergedFiles"/>

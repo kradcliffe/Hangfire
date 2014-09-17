@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Hangfire</id>
+    <id>Hangfire_net40</id>
     <version>__HANGFIRE_PACKAGE_VERSION__</version>
-    <title>Hangfire</title>
-    <authors>Sergey Odinokov</authors>
-    <owners>odinserj</owners>
+    <title>Hangfire (.Net 4.0)</title>
+    <authors>Phill Campbell</authors>
+    <owners>phillcampbell</owners>
     <projectUrl>http://hangfire.io/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.github.com/HangfireIO/Hangfire/master/LICENSE.md</licenseUrl>
@@ -36,9 +36,10 @@
 * Fixed – Redis.FetchedJobsWatcher prohibits jobs from running longer than 15 minutes.
     </releaseNotes>
     <dependencies>
-      <dependency id="Hangfire.Core" version="__HANGFIRE_PACKAGE_VERSION__" />
-      <dependency id="Hangfire.SqlServer" version="__HANGFIRE_PACKAGE_VERSION__" />
+      <dependency id="Hangfire_net40.Core" version="__HANGFIRE_PACKAGE_VERSION__" />
+      <dependency id="Hangfire_net40.SqlServer" version="__HANGFIRE_PACKAGE_VERSION__" />
       <dependency id="Microsoft.Owin.Host.SystemWeb" version="2.1.0" />
+	  <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
     </dependencies>
   </metadata>
   <files>

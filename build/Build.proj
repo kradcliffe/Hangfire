@@ -53,15 +53,15 @@
     <!-- Add any src projects that have not been defined manually -->
     <Projects Include="$(ProjectRoot)\src\**\*.csproj" Exclude="@(Projects)" />
 
-    <Projects Include="$(ProjectRoot)\samples\Hangfire.Sample.Highlighter\Hangfire.Sample.Highlighter.csproj">
+<!--    <Projects Include="$(ProjectRoot)\samples\Hangfire.Sample.Highlighter\Hangfire.Sample.Highlighter.csproj">
       <BuildDeploymentPackage>true</BuildDeploymentPackage>
       <Sample>true</Sample>
-    </Projects>
+    </Projects>-->
 
     <!-- Add any sample projects that have not been defined manually -->
-    <Projects Include="$(ProjectRoot)\samples\**\*.csproj" Exclude="@(Projects)">
+<!--    <Projects Include="$(ProjectRoot)\samples\**\*.csproj" Exclude="@(Projects)">
       <Sample>true</Sample>
-    </Projects>
+    </Projects>-->
   </ItemGroup>
 
   <ItemGroup>

@@ -9,7 +9,7 @@
       <BuildTargets>Build</BuildTargets>
       <BuildProperties>Configuration=$(Configuration);ArtifactsDir=$(ProjectArtifactsDir);SolutionDir=$(ProjectRoot)\;$(ExtraProperties)</BuildProperties>
       <CopyArtifacts>true</CopyArtifacts>
-      <Platform>Net45</Platform>
+      <Platform>Net40</Platform>
     </Projects>
   </ItemDefinitionGroup>
 </Project>

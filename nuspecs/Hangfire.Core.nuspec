@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Hangfire.Core</id>
+    <id>Hangfire_net40.Core</id>
     <version>__HANGFIRE_PACKAGE_VERSION__</version>
-    <title>Hangfire Core Components</title>
-    <authors>Sergey Odinokov</authors>
-    <owners>odinserj</owners>
+    <title>Hangfire Core Components (.Net 4.0)</title>
+    <authors>Phill Campbell</authors>
+    <owners>phillcampbell</owners>
     <projectUrl>http://hangfire.io/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.github.com/HangfireIO/Hangfire/master/LICENSE.md</licenseUrl>
@@ -17,10 +17,11 @@
       <dependency id="Owin" version="1.0" />
       <dependency id="Common.Logging" version="2.2.0" />
       <dependency id="Newtonsoft.Json" version="5.0.0" />
+	  <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
     </dependencies>
   </metadata>
   <files>
-    <file src="Net45\Hangfire.Core.dll" target="lib\net45" />
-    <file src="Net45\Hangfire.Core.xml" target="lib\net45" />
+    <file src="Net40\Hangfire.Core.dll" target="lib\net40" />
+    <file src="Net40\Hangfire.Core.xml" target="lib\net40" />
   </files>
 </package>
